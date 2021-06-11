@@ -62,10 +62,10 @@ function readposition2(data){
     ball2.x =position2.x;
     ball2.y =position2.y;
 }
-function writeposition2(x2,y2){
+function writeposition2(x,y){
     database.ref('ball2/position2').set({
-        'x2': position2.x+x2,
-        'y2': position2.y+y2
+        'x': position2.x+x,
+        'y': position2.y+y,
     })
 }
 function showerror(){
